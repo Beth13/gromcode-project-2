@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
 }
 
-.card {
+.price-card {
   background-color: #334247;
   height: 770px;
   width: 380px;
@@ -17,12 +17,12 @@
     margin-left: 0;
   }
 
-  &__header {
+  &__title {
     display: flex;
     flex-direction: column;
   }
 
-  &__header-title {
+  &__title-header {
     font-weight: 700;
     font-size: 35px;
     line-height: 43px;
@@ -32,7 +32,7 @@
     margin-top: 33px;
   }
 
-  &__header-subtitle {
+  &__title-subtitle {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
