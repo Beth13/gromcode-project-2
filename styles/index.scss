@@ -1,0 +1,19 @@
+@import 'main.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141b1c;
+  height: 100vh;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card__section-main {
+  display: flex;
+  min-height: 105px;
+}
