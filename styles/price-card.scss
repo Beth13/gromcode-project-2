@@ -1,0 +1,115 @@
+.price-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #334247;
+  height: 770px;
+  width: 380px;
+  margin: 0 9px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title-main {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0;
+    margin-top: 33px;
+  }
+
+  &__title-additional {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 105px;
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+  &__section-green {
+    background-color: #5bb189;
+  }
+
+  &__section-blue {
+    background-color: #3a6ba5;
+  }
+
+  &__section-orange {
+    background-color: #ec632a;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+    margin: 40px 26px;
+    height: 36px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    width: 155px;
+    height: 40px;
+    line-height: 17px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    margin: 39px auto 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 50px;
+    padding-left: 22px;
+
+    &:nth-child(odd) {
+      background-color: rgba(42, 52, 56, 1);
+    }
+  }
+
+  &__list-item-logo {
+    display: inline-block;
+    margin-right: 22px;
+    width: 15px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+  }
+
+  &__popular-item {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    background-color: #dc3f45;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 147px;
+    text-align: center;
+    transform: rotate(45deg);
+  }
+}

@@ -1,142 +1,124 @@
-.main {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
 .price-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
   background-color: #334247;
   height: 770px;
   width: 380px;
-  margin-left: 18px;
-  position: relative;
-}
-.price-card:first-child {
-  margin-left: 0;
+  margin: 0 9px;
 }
 .price-card__title {
   display: flex;
   flex-direction: column;
 }
-.price-card__title-header {
+.price-card__title-main {
   font-weight: 700;
   font-size: 35px;
   line-height: 43px;
   text-align: center;
-  color: #ffffff;
   margin: 0;
   margin-top: 33px;
 }
-.price-card__title-subtitle {
+.price-card__title-additional {
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
   text-align: center;
   margin: 0;
   margin-bottom: 33px;
 }
-.price-card__section1 {
-  background-color: #5bb189;
-}
-.price-card__section2 {
-  background-color: #3a6ba5;
-}
-.price-card__section3 {
-  background-color: #ec632a;
-}
-.price-card__section-title {
+.price-card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 105px;
   font-weight: 700;
   font-size: 55px;
-  line-height: 67px;
-  margin: 33px 0 40px;
-  text-align: center;
-  color: #ffffff;
-  margin: auto;
+}
+.price-card__section-green {
+  background-color: #5bb189;
+}
+.price-card__section-blue {
+  background-color: #3a6ba5;
+}
+.price-card__section-orange {
+  background-color: #ec632a;
 }
 .price-card__description {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
   margin: 0;
   margin: 40px 26px;
   height: 36px;
 }
-.price-card__options-list {
-  display: flex;
-  flex-direction: column;
-}
-.price-card__options-list-item {
-  width: 100%;
-  height: 50px;
-  display: flex;
-}
-.price-card__options-list-item:nth-child(odd) {
-  background-color: #2a3438;
-}
-.price-card__options-list-description {
-  font-size: 15px;
-  color: #fff;
-  margin: auto 22px;
-}
-.price-card__options-list-img {
-  width: 15px;
-  height: 13px;
-  margin: 18px 22px 19px;
-}
-.price-card__order-btn {
-  display: flex;
-  padding-top: 39px;
-}
-.price-card__order-btn-main {
+.price-card__btn {
+  text-transform: uppercase;
   width: 155px;
   height: 40px;
-  border: none;
-  padding: 0;
+  line-height: 17px;
   border-radius: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: auto;
-}
-.price-card__popular {
-  width: 147px;
-  height: 0;
-  position: absolute;
+  border: none;
   text-align: center;
-  transform: rotate(45deg);
-  right: -30px;
-  top: 30px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid #dc3f45;
+  color: #fff;
+  margin: 39px auto 0 auto;
+}
+.price-card__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.price-card__list-item {
+  list-style-type: none;
+  font-size: 15px;
+  line-height: 50px;
+  padding-left: 22px;
+}
+.price-card__list-item:nth-child(odd) {
+  background-color: #2a3438;
+}
+.price-card__list-item-logo {
+  display: inline-block;
+  margin-right: 22px;
+  width: 15px;
+  height: 13px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
 }
 .price-card__popular-item {
-  text-transform: uppercase;
-  color: #fff;
+  position: absolute;
+  right: -30px;
+  top: 30px;
+  background-color: #dc3f45;
   line-height: 25px;
   font-size: 14px;
   font-weight: 700;
+  text-transform: uppercase;
+  width: 147px;
+  text-align: center;
+  transform: rotate(45deg);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 body {
   background-color: #141b1c;
-  height: 100vh;
 }
 
-html {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.price-card__price {
+.price-content {
   display: flex;
-  min-height: 105px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=styles.css.map */
