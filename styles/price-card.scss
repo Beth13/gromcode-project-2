@@ -73,7 +73,7 @@
     margin: 39px auto 0 auto;
   }
 
-  &__list {
+  &__options-list {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -91,12 +91,16 @@
     }
   }
 
-  &__list-item-logo {
-    display: inline-block;
-    margin-right: 22px;
-    width: 15px;
-    height: 13px;
+  &__list-logo-green {
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+  }
+
+  &__list-logo-blue {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+  }
+
+  &__list-logo-orange {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
   }
 
   &__popular-item {
